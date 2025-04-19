@@ -68,7 +68,13 @@ ul .menuItem {
     padding: 0.5rem 1rem;
     font-size: 0.8rem;
 }
-
+.menuItemIcon input{
+    background-color: #0A490A;
+    color: white;
+    font-family: kadwa-Regular;
+    padding: 0.3rem 1rem;
+    font-size: 0.8rem;
+}
 li img {
     width: 1.2rem;
     height: 1.2rem;
@@ -1013,6 +1019,17 @@ footer span{
     }
     .flex-column{
         flex-direction: column;
+    }
+    .mobileModeFooter{
+        display: none;
+    }
+    #mobileModeFooter{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 2rem;
+    }
+    #footerLink{
+        width: 20%;
     }
 
 }
