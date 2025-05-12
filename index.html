@@ -4,42 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fruits & Vegetables</title>
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="icon" href="/favicon.ico">
 </head>
 
 <body>
     <section class="firstPageSection">
-        <header class="menuSection">
+        <header class="menuSection" id="menu">
             <nav>
                 <ul>
                     <a href="">
                         <li class="menuItem">FOODMART</li>
                     </a>
                     <a href="">
-                        <li class="menuItem">Home</li>
+                        <li class="menuItem kadwa-Regular">Home</li>
                     </a>
                     <a href="">
-                        <li class="menuItem">Fruit</li>
+                        <li class="menuItem kadwa-Regular mobileMode">Fruit</li>
                     </a>
                     <a href="">
-                        <li class="menuItem">Vegetable</li>
+                        <li class="menuItem kadwa-Regular mobileMode"> Vegetable</li>
                     </a>
                 </ul>
             </nav>
-            <li class="menuItemIcon">
-                <span>
-                    <a href="#search">
-                        <img style="vertical-align: sub;" src="/assets/media/image/Vector-search.png" alt="" id="ali">
-                    </a>
-                    <input type="text" id="search" value="Search products">
-                </span>
-                <span>
-                    <select name="" id="">
-                        <option value="">All Categories</option>
-                    </select>
-                </span>
-            </li>
+            <div class="menuItemIcon pos-relative height-2rem ">
+                
+                <a href="#search">
+                    <img  src="/assets/media/image/Vector-search.png" alt="" class="pos-absolute left-05 bottom-02 height-80">
+                </a>
+                <input type="text" id="search" placeholder="Search products" >
+
+                <select name="" id="">
+                    <option value="">All Categories</option>
+                </select>
+
+            </div>
             <li class="menuItemIcon">
                 <a href="">
                     <img title="profile" src="/assets/media/image/Vector-profile.png" alt="">
@@ -68,9 +68,9 @@
                 </div>
                 <div class="mainItem">
                     <h3>
-                        <p class="colorG">
+                        <p class="colorG text-justify">
                             These superfoods are packed with vital nutrients, including vitamins
-                            and minerals that can help keep you health. Plus, they’re easy to<br>
+                            and minerals that can help keep you health. Plus, they’re easy to
                             enjoy-just add water and let the magic happen!
                         </p>
                     </h3>
@@ -270,7 +270,7 @@
                                 <img src="/assets/media/image/🦆 icon _arrow ios downward icon_.png" alt=""
                                     class="kadwa-Regular">
                             </button>
-                        </div>
+                        </div>                       
                     </div>
 
                 </div>
@@ -399,16 +399,16 @@
                             <li class="menuItem kadwa-Regular">All categries</li>
                         </a>
                         <a href="">
-                            <li class="menuItem kadwa-Regular">Vegetables</li>
+                            <li class="menuItem kadwa-Regular mobileMode">Vegetables</li>
                         </a>
                         <a href="">
-                            <li class="menuItem kadwa-Regular">Fruits</li>
+                            <li class="menuItem kadwa-Regular mobileMode">Fruits</li>
                         </a>
                         <a href="">
-                            <li class="menuItem kadwa-Regular">Juices</li>
+                            <li class="menuItem kadwa-Regular mobileMode">Juices</li>
                         </a>
                         <a href="">
-                            <li class="menuItem kadwa-Regular">Bakers</li>
+                            <li class="menuItem kadwa-Regular mobileMode">Bakers</li>
                         </a>
                     </ul>
                 </nav>
@@ -461,6 +461,7 @@
                                     class="kadwa-Regular">
                             </button>
                         </div>
+                        <img src="assets/media/image/Vector-flash.png" class="p-h-center left-05N" alt="">
                     </div>
                     <div class="categoriesItemFull border-white">
                         <div class="fullImgSection">
@@ -558,6 +559,7 @@
                                     class="kadwa-Regular">
                             </button>
                         </div>
+                        <img src="assets/media/image/Vector-flash-right.png" class="p-h-center right-1-05N" alt="">
                     </div>
                 </div>
             </div>
@@ -719,8 +721,8 @@
                 <div class="dis-flex flex-column space-between width-100 gap-5rem">
                     <div class="width-50">
                         <span class="colorG categoriesTitle">Categories</span>
-                        <p class="kadwa-Regular colorG fontSize-08">
-                            These superfoods are packed with vital nutrients, including vitamins <br>
+                        <p class="kadwa-Regular colorG fontSize-08 text-justify">
+                            These superfoods are packed with vital nutrients, including vitamins
                             and minerals that can help keep you health. Plus, they’re easy to
                             enjoy-just add water and let the magic happen!
                         </p>
@@ -729,7 +731,7 @@
                             <img src="/assets/media/image/🦆 icon _arrow ios downward icon_.png" alt="">
                         </button>
                     </div>
-                    <div class="dis-flex margin-top width-50 gap-2rem width-100">
+                    <div class="dis-flex margin-top width-50 gap-2rem width-100" id="ExcellentDiv">
                         <div class="fullKey border-black border-raduis05 padding05">
                             <div>
                                 <span class="star marginLeft">&#9733;</span>
@@ -740,17 +742,18 @@
                                 <span class="rateNumber colorG">4.5/5</span> <br>
                             </div>
                             <span class="textKey colorG">Excellent Service</span><br>
-                            <p class="kadwa-Regular colorG fontSize-07">These superfoods are packed with vital nutrients, including
+                            <p class="kadwa-Regular colorG fontSize-07 ">These superfoods are packed with vital
+                                nutrients, including
                                 vitamins
                                 and minerals that can help keep you health. Plus, they’re easy to
                                 enjoy-just add water and let the magic happen!</p>
-                                <div class="logoSection margin-top">
-                                    <img src="/assets/media/image/in2.jpg" alt="">
-                                    <div>
-                                        <span class="colorG">Ashkan Aali</span>
-                                        <span class="kadwa-Regular colorG">Client</span>
-                                    </div>
+                            <div class="logoSection margin-top">
+                                <img src="/assets/media/image/in2.jpg" alt="">
+                                <div>
+                                    <span class="colorG">Ashkan Aali</span>
+                                    <span class="kadwa-Regular colorG">Client</span>
                                 </div>
+                            </div>
                         </div>
                         <div class="fullKey  border-black border-raduis05 padding05">
                             <div>
@@ -762,17 +765,18 @@
                                 <span class="rateNumber colorG">4.5/5</span>
                             </div>
                             <span class="textKey colorG">Excellent Service</span><br>
-                            <p class="kadwa-Regular colorG fontSize-07">These superfoods are packed with vital nutrients, including
+                            <p class="kadwa-Regular colorG fontSize-07">These superfoods are packed with vital
+                                nutrients, including
                                 vitamins
                                 and minerals that can help keep you health. Plus, they’re easy to
                                 enjoy-just add water and let the magic happen!</p>
-                                <div class="logoSection margin-top">
-                                    <img src="/assets/media/image/in2.jpg" alt="">
-                                    <div>
-                                        <span class="colorG">Ashkan Aali</span>
-                                        <span class="kadwa-Regular colorG">Client</span>
-                                    </div>
+                            <div class="logoSection margin-top">
+                                <img src="/assets/media/image/in2.jpg" alt="">
+                                <div>
+                                    <span class="colorG">Ashkan Aali</span>
+                                    <span class="kadwa-Regular colorG">Client</span>
                                 </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -847,7 +851,7 @@
             </div>
             <!-- ------------------------------------------------ -->
             <div class="footerContentSection width-80 height-auto margin-top" id="mobileModeFooter">
-                <div class="footerContent width-30 mobileModeFooter">
+                <div class="footerContent width-30 mobileMode">
                     <span class="color-yellow">Foodmart</span>
                     <p class="kadwa-Regular fontSize-07 line-height-1-2 margin-top">These superfoods are packed with
                         vital
@@ -856,29 +860,47 @@
                 <div class="footerContent width-15" id="footerLink">
                     <span class="color-white">Navigation</span>
                     <ul>
-                        <a href=""> <li>Search</li> </a>
-                        <a href=""> <li>My Cart</li> </a>
-                        <a href=""> <li>Categories</li> </a>
-                        <a href=""> <li>Wishlist</li> </a>
+                        <a href="">
+                            <li>Search</li>
+                        </a>
+                        <a href="">
+                            <li>My Cart</li>
+                        </a>
+                        <a href="">
+                            <li>Categories</li>
+                        </a>
+                        <a href="">
+                            <li>Wishlist</li>
+                        </a>
                     </ul>
                 </div>
                 <div class="footerContent width-15" id="footerLink">
                     <span class="color-white">About Us</span>
                     <ul>
-                        <a href=""> <li>About us</li> </a>
-                        <a href=""> <li>Contact us</li> </a>
-                        <a href=""> <li>Faq’s</li> </a>
-                        <a href=""> <li>Delivery</li> </a>
-                        <a href=""> <li>Privacy Policy</li> </a>
+                        <a href="">
+                            <li>About us</li>
+                        </a>
+                        <a href="">
+                            <li>Contact us</li>
+                        </a>
+                        <a href="">
+                            <li>Faq’s</li>
+                        </a>
+                        <a href="">
+                            <li>Delivery</li>
+                        </a>
+                        <a href="">
+                            <li>Privacy Policy</li>
+                        </a>
                     </ul>
                 </div>
-                <div class="footerContent mobileModeFooter">
+                <div class="footerContent mobileMode">
                     <span class="color-white">Subscribe newsletter and get 20% off</span>
                     <p class="kadwa-Regular fontSize-07 line-height-1-2 margin-top">These superfoods are packed with
                         vital
                         nutrients, including vitamins.</p>
                     <div class="inputEmailSection">
-                        <input type="email" value="Enter email address.....">
+                        <input type="email" placeholder="Enter email address.....">
                         <button>
                             >
                         </button>
@@ -893,8 +915,8 @@
         <footer class="colorG-back width-100">
             <div>
                 <span class="color-white fontSize-09">2025, All Rights Reserved</span>
-                <span class="color-white fontSize-09">Made by 
-                <span class="color-yellow fontSize-09"> Ashkan Aali</span></span>
+                <span class="color-white fontSize-09">Made by
+                    <span class="color-yellow fontSize-09"> Ashkan Aali</span></span>
             </div>
         </footer>
 
@@ -907,6 +929,9 @@
 
 
         <!---------------------- start page 6 ---------------------->
+        <a class="backIcon" href="#menu">
+            ⬆
+        </a>
 
     </section>
 

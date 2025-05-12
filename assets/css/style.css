@@ -27,6 +27,7 @@ button {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    position: relative;
 }
 
 /* ----------------- header ------------- */
@@ -37,8 +38,7 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    /* gap: 10rem;
-    padding: 0 15rem; */
+    align-items: center;
 }
 
 nav {
@@ -59,20 +59,17 @@ ul .menuItem {
 .menuItemIcon {
     display: flex;
     flex-direction: row;
-    margin: auto 0;
-    color: white;
 }
 
-.menuItemIcon span {
-    border: 0.01rem solid white;
-    padding: 0.5rem 1rem;
-    font-size: 0.8rem;
+.menuItemIcon input , .menuItemIcon select{
+    border: 0.05rem solid white;
+    color: white;
+    background: transparent;
+    text-align: center;
+    padding-inline: 1rem;
 }
 .menuItemIcon input{
-    background-color: #0A490A;
-    color: white;
     font-family: kadwa-Regular;
-    padding: 0.3rem 1rem;
     font-size: 0.8rem;
 }
 li img {
@@ -82,12 +79,6 @@ li img {
     vertical-align: middle;
 }
 
-.menuSection select {
-    background-color: #0A490A;
-    color: white;
-    border: none;
-    vertical-align: middle;
-}
 
 /*  ------------------- main -------------------  */
 
@@ -222,6 +213,7 @@ main h2 {
     align-items: center;
     gap: 0.5rem;
     position: relative;
+    margin-top: 1rem;
 }
 
 .categoriesItem {
@@ -340,6 +332,7 @@ main h2 {
     width: 30%;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .categoriesItemFull .fullImgSection {
@@ -513,12 +506,6 @@ main h2 {
 
 button {
     cursor: pointer;
-}
-
-.firstPageSection {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
 }
 
 
@@ -755,6 +742,31 @@ footer span{
 }
 
 /* end footer */
+/*            scrol to up                  */
+.backIcon{
+    position: fixed;
+    right: 0.5rem;
+    bottom: 0.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%;
+    background-color: white;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 30%;
+    color: #0A490A;
+    outline: 0.1rem solid #0A490A;
+    outline-offset: 0.3rem;
+}
+.backIcon:hover{
+    opacity: 100%;
+    box-shadow: 0 0 1rem #0A490A;
+    background-color: #327613;
+    color: white;
+}
+
 
 /* ------------------util css-------------------- */
 .pos-relative{
@@ -763,7 +775,21 @@ footer span{
 .pos-absolute{
     position: absolute;
 }
-
+.left-05{
+    left: 0.5rem;
+}
+.left-05N{
+    left: -0.5rem;
+}
+.right-1-05N{
+    right: -1.5rem;
+}
+.tr-ro-180{
+    transform: rotate(180deg);
+}
+.bottom-02{
+    bottom: 0.2rem;
+}
 .colorG {
     color: #0A490A;
 }
@@ -875,7 +901,9 @@ footer span{
 .height-100{
     height: 100%;
 }
-
+.height-80{
+    height: 80%;
+}
 .height-65{
     height: 65%;
 }
@@ -931,6 +959,22 @@ footer span{
     overflow: hidden;
     border-radius: 1rem;
 }
+.height-2rem{
+    height: 2rem;
+}
+.margin-left-1{
+    margin-left: 1rem;
+}
+
+.p-h-center{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%);
+}
+
+.text-justify{
+    text-align: justify;
+}
 
 /* -------------------- end util css ---------------------- */
 
@@ -940,13 +984,12 @@ footer span{
     .menuSection .menuItemIcon {
         display: none;
     }
-
     .mainSection .mainExplain {
         padding: 0rem 1rem;
     }
 
     .mainSection .fruitsImg {
-        height: 30%;
+        height: 20%;
     }
 
     .firstPageSection {
@@ -957,7 +1000,7 @@ footer span{
         height: 5.5rem;
         width: 5.5rem;
         left: 70%;
-        top: 25%;
+        top: 15%;
     }
 
     .categoriesItemSection {
@@ -1015,12 +1058,16 @@ footer span{
     }
     .articleCardSection .articleCard{
         width: 65%;
+        height: 50vh;
         border: 0.1rem solid #0A490A;
     }
     .flex-column{
         flex-direction: column;
     }
-    .mobileModeFooter{
+    #ExcellentDiv{
+        flex-direction: column;
+    }
+    .mobileMode{
         display: none;
     }
     #mobileModeFooter{
@@ -1035,6 +1082,9 @@ footer span{
 }
 
 @media (min-width :768px) and (max-width : 991px) {
+    .menuSection .menuItemIcon {
+        display: none;
+    }
     .starSection {
         height: 6rem;
         width: 6rem;
